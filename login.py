@@ -7,7 +7,9 @@ app = Flask(__name__)
 app.config['MONGO_URI'] = 'mongodb://admin:123456@ds139219.mlab.com:39219/smart_irrigation'
 
 mongo = PyMongo(app)
-
+@app.route('/', methods=['GET'])
+def get():
+    return "Hello"
 @app.route('/login', methods=['GET'])
 def get_all_frameworks():
     framework = mongo.db.login
