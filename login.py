@@ -49,4 +49,4 @@ def get_info():
 	soil_data=requests.get("https://api.thingspeak.com/channels/452295/feeds.json?api_key=FYZ31ZL74D3RUEML&results=200")
 	return soil_data.text
 if __name__ == '__main__':
-    app.run(port = 5000)
+    app.run()
