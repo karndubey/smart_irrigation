@@ -1,2 +1,1 @@
-web: gunicorn login:app
-web: python login.py
+web: gunicorn flask_rest_service:app

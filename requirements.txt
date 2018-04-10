@@ -9,3 +9,7 @@ requests==0.11.1
 numpy==1.8.0
 pymongo==3.3.0
 Flask-PyMongo==0.5.1
+Flask-PyMongo==0.3.0
+Flask-RESTful==0.2.12
+pytz==2014.4
+six==1.7.2
