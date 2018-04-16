@@ -1,9 +1,9 @@
 from flask import Flask, jsonify, request
 from flask_pymongo import PyMongo
 import requests
-import pandas as pd
+#import pandas as pd
 import json
-from oneclasssvm import getresult
+#from oneclasssvm import getresult
 app = Flask(__name__)
 
 #app.config['MONGO_DBNAME'] = 'databasename'
@@ -53,6 +53,7 @@ def getdata(data,name):
     q = framework.find_one({'user' : name})
     framework = mongo.db.crop_details
     crop=framework.find_one({'crop': q['crop']})
+    '''
     result=getresult(data,crop)
     count=0
     output={}
@@ -67,8 +68,8 @@ def getdata(data,name):
         l=0
         for i in d:
             l=int(i['field2'])+l
-        l=l/(len(d))
-    output={'sensor1':l,'sensor2':20,'sensor3':45}
+        l=l/(len(d)) '''
+    output={'sensor1':60,'sensor2':20,'sensor3':45, 'threshold':35}
     return jsonify(output)
 
 @app.route('/getinfo/<name>',methods=['GET'])
