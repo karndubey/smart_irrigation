@@ -12,6 +12,6 @@ Flask-PyMongo==0.5.1
 Flask-RESTful==0.2.12
 pytz==2014.4
 six==1.7.2
-scipy==0.14.0
-pandas==0.8.1
-scikit-learn==0.16.1
+scikit-learn==0.19.1
+scipy==1.0.0
+pandas=0.22.0
