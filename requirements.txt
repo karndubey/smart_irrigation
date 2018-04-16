@@ -13,5 +13,5 @@ Flask-RESTful==0.2.12
 pytz==2014.4
 six==1.7.2
 scipy==0.14.0
-numpy==1.9.1
+pandas==0.8.1
 scikit-learn==0.16.1
